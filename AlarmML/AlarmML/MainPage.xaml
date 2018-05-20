@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="AlarmML.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AlarmML"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:media="using:Microsoft.Toolkit.Uwp.UI.Media"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5, 1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#108dc7"></GradientStop>
+                    <GradientStop Color="#ef8e38" Offset="1"></GradientStop>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Viewbox extensions:VisualExtensions.NormalizedCenterPoint="0.5" extensions:VisualExtensions.RotationAngleInDegrees="180" HorizontalAlignment="Right" Margin="0,0,200,0">
+            <FontIcon x:Name="AlarmIcon" FontSize="400" FontFamily="Segoe MDL2 Assets" Glyph="&#xF1AD;" Foreground="#33333333" Margin="0,100,0,-100"/>
+        </Viewbox>
+
+        <TextBlock x:Name="SubText" Grid.Row="2" HorizontalAlignment="Left" FontFamily="Segoe UI" VerticalAlignment="Top" Foreground="#44444444" FontSize="30" Margin="50,0">Hello</TextBlock>
+
+        <Viewbox Margin="50,0" Grid.Row="1" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="20">
+                <controls:DropShadowPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock x:Name="TimeText"  TextAlignment="Center" Foreground="#44444444" FontFamily="Segoe UI" FontWeight="Light" FontSize="400">12</TextBlock>
+                </controls:DropShadowPanel>
+                <controls:DropShadowPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,70">
+                    <TextBlock x:Name="TimeMinutesText"  TextAlignment="Center" Foreground="#44444444" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="150">13</TextBlock>
+                </controls:DropShadowPanel>
+            </StackPanel>
+        </Viewbox>
+
+        <InkCanvas x:Name="Inker" Grid.RowSpan="3"></InkCanvas>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="40,0" Grid.Row="2">
+            <Button Foreground="#66FFFFFF" Click="Button_Click" Background="Transparent">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEDAB;" FontSize="40"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
