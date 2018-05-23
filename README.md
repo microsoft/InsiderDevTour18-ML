@@ -7,6 +7,7 @@
     - Universal Windows Platform development workload with Windows 10 SDK (10.0.17134.0)
 1. Git (recommended)
 1. [Netron](https://github.com/lutzroeder/Netron/releases) for visualizing ONNX models
+    > NOTE: When installing the app, Windows will warn you the app is unrecognized. Click on the **More info** to allow the install to continue
 
 ## Getting started with WinML and Emotion model
 
@@ -14,7 +15,7 @@
 1. [Emotion recognition in faces model](https://gallery.azure.ai/Model/Emotion-recognition-in-faces-FER)
 
 ### Setup
-1. Open *Microsoft Edge* and navigate to the *Emotion recognition* model linked above
+1. Open *Microsoft Edge* and navigate to the *Emotion recognition* model linked above. Download the model and save it for later in the demo.
 1. Open *EmotionML/EmotionML.sln* in Visual Studio
 1. Create the snippets that you will drag and drop in the code during the demo
     - Open MainPage.cs and find the two snippets - there should be a comment above each snippet
