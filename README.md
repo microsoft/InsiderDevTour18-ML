@@ -23,8 +23,7 @@
     - Select each snippet and drag it to the toolbox to create the toolbox snippet
     - Once the two snippets are created in the toolbox, delete them from MainPage.cs
 1. Make sure the webcam capability is enabled in the manifest
-1. Make sure "Microsoft.Toolkit.Uwp.UI.Controls" nuget package is installed
-    > Note: the CameraPreview control needed for this demo will be available in the 3.0 release of the toolkit which will be released by the time you will be doing the demo. To practice today, use the pre-release packages found [here](https://1drv.ms/u/s!AjZLNGpIZBbgr9Ru0aDufcJ3gaXV2A)
+1. Make sure "Microsoft.Toolkit.Uwp.UI.Controls" v3.0 nuget package is installed
 
 ### Demo Steps
 
