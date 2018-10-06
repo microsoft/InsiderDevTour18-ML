@@ -23,7 +23,7 @@
     - Select each snippet and drag it to the toolbox to create the toolbox snippet
     - Once the two snippets are created in the toolbox, delete them from MainPage.cs
 1. Make sure the webcam capability is enabled in the manifest
-1. Make sure "Microsoft.Toolkit.Uwp.UI.Controls" v3.0 nuget package is installed
+1. Make sure "Microsoft.Toolkit.Uwp.UI.Controls" v3.0 Nuget package is installed
 
 ### Demo Steps
 
@@ -53,7 +53,7 @@
 1. Make sure you are on the *Projects* view
 
 #### Visual Studio
-1. Open Visual Studio and create a blank new app - you will use this app to demonstate the new model you will generate
+1. Open Visual Studio and create a blank new app - you will use this app to demonstrate the new model you will generate
 1. Open another instance of Visual Studio and open the *AlarmML/AlarmML.sln* solution
 1. Open *MainPage.xaml.cs*
 
@@ -69,7 +69,7 @@
     - Click **Upload 8 files**
 1. Once all images are upload, click on **Train** in the upper right corner
 1. Once the training is complete, click on **Export** and download the model in the *ONNX* format
-    > Note: Training might take few minutes and I recommend you have another Custom Vision project that has the model pre-trained to switch to. You should also have the model already downloaded.
+    > Note: Training might take a few minutes and I recommend you have another Custom Vision project that has the model pre-trained to switch to. You should also have the model already downloaded.
 
 #### Use the model Visual Studio
 1. In the blank app you created in Visual Studio, drag and drop the new model you created
